@@ -1,0 +1,4 @@
+Name: Cooper Simpson
+Partner: None
+
+Git URL: https://github.com/RS-Coop/lab_2.git

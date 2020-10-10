@@ -1,0 +1,120 @@
+<!<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1> Coopers Form </h1>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Please fill out all necessary fields.</p>
+        </div>
+      </div>
+    </div>
+
+    <br></br>
+
+    <div class="container">
+      <div class="form-group">
+        <label for="nickname">Nickname</label>
+        <input type="text" class="form-control" id="nickname" placeholder="Enter Nickname">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+      </div>
+      <div class="form-group">
+        <label for="psswrd">Password</label>
+        <input type="password" class="form-control" id="psswrd" placeholder="Enter Password">
+      </div>
+
+      <fieldset class="form-group">
+        <medium class="form-group-label">Gender</medium>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="male" value="option1">
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="female" value="option2">
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="other" value="option3">
+          <label class="form-check-label" for="other">Other</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="noans" value="option4">
+          <label class="form-check-label" for="noans">Prefer not to answer</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <div class="form-group">
+          <label for="secQ">Security Question</label>
+          <select class="form-control" id="secQ">
+            <option>What is your favourite kind of pet?</option>
+            <option>What is your favourite ice cream?</option>
+            <option>Who is your favourite historical figure</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="answer">Answer</label>
+          <input type="text" class="form-control" id="answer" placeholder="Answer Security Question">
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <medium class="form-group-label">Favourite Programming Language</medium>
+        <div class="form-check">
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="c">
+              <label class="form-check-label" for="c">C++</label>
+            </div>
+            <div class="form-check form-check-inline"">
+              <input type="checkbox" class="form-check-input" id="py">
+              <label class="form-check-label" for="py">Python</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="js">
+              <label class="form-check-label" for="js">JavaScript</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="html">
+              <label class="form-check-label" for="html">HTML</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="go">
+              <label class="form-check-label" for="go">GO</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="j">
+              <label class="form-check-label" for="j">Java</label>
+            </div>
+          </div>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="add">Additional Information</label>
+        <textarea class="form-control" id="add" rows="5"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <br></br>
+
+    </div>
+
+  </body>
+</html>

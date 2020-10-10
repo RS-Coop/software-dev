@@ -1,0 +1,60 @@
+Author: Cooper Simpson
+
+Scripts:
+
+1)
+CREATE TABLE universities(
+	name TEXT NOT NULL,
+	founded DATE NOT NULL,
+	adress TEXT NOT NULL,
+	studentPop INTEGER NOT NULL,
+	acceptanceRate REAL NOT NULL
+);
+
+2)
+INSERT INTO universities(name,founded,adress,studentPop,acceptanceRate)
+VALUES('CU Boulder',to_date('1876','YYYY'),'1100 20th St, Boulder, CO 80303',35000,.80);
+
+3)
+SELECT name,major FROM football_players
+ORDER BY major;
+
+4)
+SELECT name,rushing_yards FROM football_players
+WHERE rushing_yards >= 70;
+
+5)
+SELECT * FROM football_games
+WHERE visitor_name = 'Nebraska';
+
+6)
+SELECT visitor_name FROM football_games
+WHERE home_score > visitor_score;
+
+7)
+SELECT visitor_name, game_date FROM football_games
+WHERE EXTRACT(YEAR FROM game_date) = '2018';
+
+8)
+CREATE VIEW total_wins AS
+SELECT COUNT(*) AS "wins" FROM football_games
+WHERE home_score > visitor_score;
+
+9)
+CREATE VIEW games AS
+SELECT COUNT(*) AS "games played" FROM football_games;
+
+10)
+SELECT TRUNC(total_wins.wins/CAST(games."games played" AS DECIMAL)*100,2) || '%' AS "Percent Win"
+FROM total_wins,games;
+
+11)
+SELECT COUNT(*) 
+FROM football_games
+WHERE (SELECT id FROM football_players WHERE name = 'Cedric Vega') = ANY(players);
+
+12)
+SELECT TRUNC((SELECT rushing_yards FROM football_players WHERE name = 'Cedric Vega')/
+CAST((SELECT COUNT(*) FROM football_games
+WHERE (SELECT id FROM football_players WHERE name = 'Cedric Vega') = ANY(players)) AS DECIMAL),3);
+		

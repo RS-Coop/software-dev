@@ -1,0 +1,188 @@
+
+.alignleft {
+
+	float: left;
+
+}
+
+.alignright {
+
+	float: right;
+}
+
+.collapse dl{
+	padding-left:30px;
+}
+.collapsing dl{
+	padding-left:30px;
+}
+.collapse dd{
+	padding-left:30px;
+}
+
+.collapsing dd{
+	padding-left:30px;
+}
+
+.collapseAll, .expandAll{
+
+	margin:5px;
+
+}
+
+
+.alignbtn{
+
+	float: right;
+
+	margin-top:-2px;
+
+	margin-left:10px;
+
+}
+
+
+
+#bottom_nav{
+
+	position:fixed;
+
+	background-color:white;
+	
+	border-top: 5px solid black;
+	
+	width:100%;
+
+	height:100px;
+
+	bottom:0;
+
+	padding-bottom:10px;
+
+	padding-top:10px;
+
+}
+
+main{
+
+	margin-bottom:105px;
+
+}
+
+#progressBar{
+
+	padding-left:25px;
+
+}
+
+
+
+.upTriangle {
+
+  cursor: pointer;
+
+  width: 0px;
+
+  height: 0px;
+
+  border-style: inset;
+
+  border-width: 0 50px 75px 50px;
+
+  border-color: transparent transparent green transparent;
+
+  float: left;
+
+}
+
+
+
+.upTriangle p {
+
+  font-size:1.5em;
+
+  text-align: center;
+
+  top: 30px;
+
+  left: -23px;
+
+  position: relative;
+
+  width: 43px;
+
+  height: 43px;
+
+  margin: 0px;
+
+  color:white;
+
+}
+
+
+
+.downTriangle {
+
+  width: 0px;
+
+  height: 0px;
+
+  border-style: inset;
+
+  border-width: 0 50px 75px 50px;
+
+  border-color: transparent transparent green transparent;
+
+  float: left;
+
+  cursor: pointer;
+
+  margin-left:-43px;
+
+  margin-right:-43px;
+
+  transform: rotate(180deg);
+
+  -ms-transform: rotate(180deg);
+
+  -moz-transform: rotate(180deg);
+
+  -webkit-transform: rotate(180deg);
+
+  -o-transform: rotate(180deg);
+
+}
+
+
+
+.downTriangle p {
+
+  font-size:1.5em;
+
+  text-align: center;
+
+  top: 23px;
+
+  left: -23px;
+
+  position: relative;
+
+  width: 43px;
+
+  height: 43px;
+
+  margin: 0px;
+
+  color:white;
+
+  transform: rotate(180deg);
+
+  -ms-transform: rotate(180deg);
+
+  -moz-transform: rotate(180deg);
+
+  -webkit-transform: rotate(180deg);
+
+  -o-transform: rotate(180deg);
+
+}
